@@ -30,10 +30,3 @@ In this video, we'll be going through the following steps.
 * Notification Setup: Configuring Amazon SES
 * Processing Setup: Creating a Lambda function
 * Integration and Testing
-
-### Clean Up 🗑️
-1. Delete S3 Bucket: Remove all uploaded receipt files and then delete the bucket.
-2. Stop Textract Processing: Ensure no further API calls are made to prevent extra costs.
-3. Delete DynamoDB Table: Remove stored receipt data and then delete the table.
-4. Disable SES Notifications: If SES was configured, remove verified email addresses.
-5. Remove IAM Roles and Policies: Delete the IAM role created for the Lambda function.
