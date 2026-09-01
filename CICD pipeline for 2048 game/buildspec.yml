@@ -1,5 +1,4 @@
 version: 0.2
-​
 phases:
   pre_build:
     commands:
@@ -17,7 +16,6 @@ phases:
       - docker push 077207386520.dkr.ecr.us-east-1.amazonaws.com/2048-game-repo:latest
       - echo Creating imagedefinitions.json file for ECS deployment...
       - echo '[{"name":"2048-container","imageUri":"077207386520.dkr.ecr.us-east-1.amazonaws.com/2048-game-repo:latest"}]' > imagedefinitions.json
-​
 artifacts:
   files:
     - imagedefinitions.json
